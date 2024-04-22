@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --winning-blocks: #696d7d;
+}
+#playerText {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.ttt-container {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #119da4;
+  border: 2px solid #696d7d;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#gameboard {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 120px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.box:nth-child(3n) {
+  border-right: none;
+}
+
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

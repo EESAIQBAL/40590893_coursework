@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Attempt</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="nav-styles.css" />
+    <link rel="stylesheet" href="hangman-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list nav-list-mobile">
+            <li class="nav-item">
+              <span class="line line-top"></span>
+              <span class="line line-bottom"></span>
+            </li>
+            <li class="nav-item">
+              <a href="index.html"
+                ><img src="images/icons/napier.png" alt="napier logo"
+              /></a>
+            </li>
+          </ul>
+          <!--End of Mobile Navigation Bar-->
+          <ul class="nav-list nav-list-large">
+            <li class="nav-list nav-list-hidden">
+              <a href="index.html"
+                ><img src="images/icons/napier.png" alt="napier logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="hangman.html" class="nav-link">Hangman</a>
+            </li>
+            <li class="nav-item">
+              <a href="tictactoe.html" class="nav-link">Tic Tac Toe</a>
+            </li>
+            <li class="nav-item">
+              <a href="wordle.html" class="nav-link">Wordle</a>
+            </li>
+          </ul>
+          <!--End of Large Navigation Bar-->
+        </nav>
+      </div>
+    </header>
+    <!-- Start of Hangman Game Section -->
+    <div class="hangman-container">
+      <h1>
+        Harry Potter Themed <br />
+        Hangman Game
+      </h1>
+      <div class="hangman-word" id="hangmanWord"></div>
+      <div class="hangman-input">
+        <input type="text" id="letterInput" maxlength="1" />
+        <button onclick="checkLetter()">Guess</button>
+      </div>
+      <div class="hangman-guesses">
+        <p>Incorrect guesses: <span id="incorrectGuesses">0</span></p>
+      </div>
+    </div>
+    <!-- End of Hangman Game Section -->
+
+    <!-- Start of Content Section -->
+
+    <div class="hp-container">
+      <img
+        class="content-image"
+        src="images/hero/harry potter.webp"
+        alt="Harry Potter image"
+      />
+      <p class="hp-text">
+        Welcome to the Harry Potter Hangman Game! <br /><br />
+        In this game, you'll have the chance to guess words related to the
+        magical world of Harry Potter. The words to guess from can be
+        characters, spells, magical creatures, locations, or any other element
+        from the Harry Potter universe. <br /><br />
+        Before you start, I wish you the best of luck and, most importantly,
+        have fun immersing yourself in the wizarding world!
+      </p>
+    </div>
+    <div class="large-strip">
+      <div class="hp-container">
+        <img
+          src="images/hero/hp-large.jpg"
+          alt="Large HP image"
+          class="large-strip-image"
+        />
+      </div>
+    </div>
+
+    <script src="hangman.js"></script>
+  </body>
+</html>

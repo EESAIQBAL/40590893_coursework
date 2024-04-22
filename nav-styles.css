@@ -1,0 +1,37 @@
+/* Header Section */
+
+.container {
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+header {
+  width: 100%;
+  top: 0;
+  z-index: 1400;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  color: white;
+  padding: 0 1rem;
+  transition: opacity 0.5s;
+}
+.nav-link:hover {
+  opacity: 0.7;
+}

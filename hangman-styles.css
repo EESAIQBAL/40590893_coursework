@@ -1,0 +1,104 @@
+/* Hangman Game Section */
+
+.hangman-word {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hangman-input {
+  margin-bottom: 20px;
+}
+
+.hangman-input input {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.hangman-input button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hangman-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #119da4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hangman-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hangman-container .hangman-word {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hangman-container .hangman-input {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hangman-container .hangman-input input[type="text"] {
+  padding: 10px;
+  font-size: 1.2rem;
+  width: 50px;
+  text-align: center;
+  border: 2px solid #666;
+  border-radius: 5px;
+}
+
+.hangman-container .hangman-input button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.hangman-container .hangman-input button:hover {
+  background-color: #0056b3;
+}
+
+.hangman-container .hangman-guesses {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Harry Potter Section */
+
+.hp-container {
+  border: 2px solid #696d7d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+.content-image {
+  border: 2px solid #696d7d;
+  float: left;
+  margin-right: 20px;
+}
+.hp-text {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+  width: calc(100% - 200px);
+}
+.large-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
