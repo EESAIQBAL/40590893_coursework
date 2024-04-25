@@ -1,3 +1,4 @@
+import { words } from "./words.js";
 document.addEventListener("DOMContentLoaded", () => {
   // also in local storage
   let currentWordIndex = 0;
@@ -5,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let availableSpace = 1;
   let guessedWords = [[]];
 
-  const words = ["sweet", "onion", "shoes", "heavy", "couch"];
   let currentWord = words[currentWordIndex];
 
   initLocalStorage();
@@ -201,8 +201,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateWordIndex() {
+    // Generate a random index based on the length of the words array
+    currentWordIndex = Math.floor(Math.random() * words.length);
     console.log({ currentWordIndex });
-    window.localStorage.setItem("currentWordIndex", currentWordIndex + 1);
+    window.localStorage.setItem("currentWordIndex", currentWordIndex);
   }
 
   async function handleSubmitWord() {
